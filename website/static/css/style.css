@@ -959,14 +959,22 @@ section {
   position: relative;
 }
 
+.team .row {
+  display: flex;
+  justify-content: center; 
+}
+
+
 .team .member .pic {
   overflow: hidden;
+  position: relative;
 }
 
 .team .member .member-info {
+  width: 300px;
   position: absolute;
-  top: 85%;
-  left: 20px;
+  transform: translate(-50%, -50%);
+  left: 50%;
   right: 20px;
   background: #fff;
   padding: 20px 0;
@@ -1001,7 +1009,7 @@ section {
   left: calc(50% - 25px);
 }
 
-.team .member span {
+.team .member span ,p{
   font-style: italic;
   display: block;
   font-size: 13px;
@@ -1030,6 +1038,7 @@ section {
     margin-bottom: 110px;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Footer
