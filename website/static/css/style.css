@@ -483,6 +483,47 @@ h6 {
   }
 }
 
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f4f9fc;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 30px;
+  color: #2f4d5a;
+  z-index: 2;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 122px;
+  height: 66px;
+  background: url(../img/section-title-bg.png) no-repeat;
+  z-index: -1;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
 
 /*--------------------------------------------------------------
 # Breadcrumbs
@@ -695,56 +736,6 @@ h6 {
   color: #fff;
 }
 
-/*--------------------------------------------------------------
-# Counts
---------------------------------------------------------------*/
-.counts {
-  padding-bottom: 30px;
-}
-
-.counts .count-box {
-  padding: 30px;
-  width: 100%;
-}
-
-.counts .count-box i {
-  display: block;
-  font-size: 44px;
-  color: #67b0d1;
-  float: left;
-  line-height: 0;
-}
-
-.counts .count-box span {
-  font-size: 48px;
-  line-height: 40px;
-  display: block;
-  font-weight: 700;
-  color: #2f4d5a;
-  margin-left: 60px;
-}
-
-.counts .count-box p {
-  padding: 15px 0 0 0;
-  margin: 0 0 0 60px;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  color: #49788c;
-}
-
-.counts .count-box a {
-  font-weight: 600;
-  display: block;
-  margin-top: 20px;
-  color: #49788c;
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
-  transition: ease-in-out 0.3s;
-}
-
-.counts .count-box a:hover {
-  color: #6e9fb4;
-}
 
 /*--------------------------------------------------------------
 # Cta
