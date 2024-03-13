@@ -1,6 +1,3 @@
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -526,54 +523,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 15px 0;
-  background-color: #f8fbfd;
-  min-height: 40px;
-}
-
-.breadcrumbs h2 {
-  font-size: 24px;
-  font-weight: 300;
-}
-
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-}
-
-.breadcrumbs ol li+li {
-  padding-left: 10px;
-}
-
-.breadcrumbs ol li+li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #6c757d;
-  content: "/";
-}
-
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-
-  .breadcrumbs ol {
-    display: block;
-  }
-
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
-}
-
-/*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .about {
@@ -635,6 +584,13 @@ section {
   background: #7bbad7;
 }
 
+.about .icon-boxes h3 {
+  font-weight: 700;
+  font-size: 34px;
+  color: #2f4d5a;
+  margin-bottom: 30px;
+}
+
 .about .icon-boxes .icon-box {
   margin-top: 30px;
 }
@@ -652,7 +608,7 @@ section {
 }
 
 .about .icon-boxes .icon-box p {
-  font-size: 15px;
+  font-size: 14px;
   color: #848484;
 }
 
@@ -713,7 +669,7 @@ section {
 
 .services .title {
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   font-size: 18px;
 }
 
@@ -721,13 +677,20 @@ section {
   color: #111;
 }
 
+.services .levels {
+  font-size: 11px;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+
 .services .description {
-  font-size: 15px;
-  line-height: 28px;
+  font-size: 14px;
+  line-height: 22px;
   margin-bottom: 0;
 }
 
 .services .icon-box:hover .title a,
+.services .icon-box:hover .levels,
 .services .icon-box:hover .description {
   color: #fff;
 }
@@ -778,6 +741,7 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+
 .portfolio #filters {
   padding: 0;
   margin: 0 auto 35px auto;
@@ -884,6 +848,8 @@ section {
   visibility: visible;
 }
 
+
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
@@ -948,7 +914,6 @@ section {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
-
 
 /*--------------------------------------------------------------
 # Team
@@ -1038,7 +1003,6 @@ section {
     margin-bottom: 110px;
   }
 }
-
 
 /*--------------------------------------------------------------
 # Footer
